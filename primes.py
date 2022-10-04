@@ -1,6 +1,6 @@
 """List of prime numbers generator."""
 """ENTER YOUR SOLUTION HERE!"""
-import math
+
 def primes(number_of_primes):
     list = []
     i=1
@@ -10,11 +10,11 @@ def primes(number_of_primes):
             if i%n == 0:
                 factorList.append(n)
             elif len(factorList) > 2:
-                i+=1
                 break
         if len(factorList) == 2:
             list.append(i)
         i += 1
     return list
 
-print(primes(10))
+    
+print(primes(20))
